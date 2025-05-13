@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agende com a Manicure Carla</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+    }
+    header {
+      background-color: #d63384;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .horarios, .formulario {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f8d7da;
+    }
+    .btn-reservar, .btn-agendar {
+      display: inline-block;
+      background-color: #d63384;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .galeria img {
+      width: 100px;
+      height: auto;
+      margin: 5px;
+      border-radius: 8px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Manicure Carla</h1>
+  <p>Beleza nas suas mãos com carinho e dedicação 💅</p>
+</header>
+
+<section>
+  <h2>📸 Galeria de Trabalhos</h2>
+  <div class="galeria">
+    <img src="foto1.jpg" alt="Unhas decoradas 1">
+    <img src="foto2.jpg" alt="Unhas decoradas 2">
+    <img src="foto3.jpg" alt="Unhas decoradas 3">
+  </div>
+</section>
+
+<section class="horarios">
+  <h2>🕒 Horários Disponíveis</h2>
+  <table>
+    <tr>
+      <th>Data</th>
+      <th>Horário</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>13/05/2025</td>
+      <td>14h00</td>
+      <td>Disponível</td>
+    </tr>
+    <tr>
+      <td>14/05/2025</td>
+      <td>10h00</td>
+      <td>Disponível</td>
+    </tr>
+  </table>
+</section>
+
+<section class="formulario">
+  <h2>📅 Faça sua Reserva</h2>
+  <form action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail (para receber confirmação)" required>
+    <input type="date" name="data" required>
+    <input type="time" name="hora" required>
+    <button type="submit" class="btn-agendar">Enviar e Receber Confirmação</button>
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+  <p style="margin-top:10px;">Você receberá a confirmação no seu e-mail.</p>
+</section>
+
+<section>
+  <h2>📍 Localização</h2>
+  <p>Rua das Flores, 123 – Bairro Jardim – Cidade/UF</p>
+  <iframe src="https://maps.google.com/maps?q=rua%20das%20flores%20123&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+</section>
+
+<footer style="text-align:center; padding:20px; background:#f8d7da;">
+  <p>&copy; 2025 Manicure Carla – Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
